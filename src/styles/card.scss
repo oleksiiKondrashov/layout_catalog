@@ -8,16 +8,22 @@
   max-width: 200px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
-  padding: 30px 14px 15px;
+  padding: 15px 14px;
   margin: 0 24px 50px;
 }
 
 .card__photo {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 5px;
+  padding: 15px 0;
   width: 160px;
-  height: 134px;
+  height: 164px;
+  transition: transform 1s, outline 1s;
+}
+
+.card__photo:hover {
+  outline: 3px solid #f3f3f3;
+  transform: scale(1.2);
 }
 
 .card__title {
@@ -100,6 +106,7 @@
   font-size: 14px;
   line-height: 16px;
   text-decoration: none;
+  transition: background-color 0.5s, color 0.5s, border 0.5s;
 }
 
 .card__button:hover {
